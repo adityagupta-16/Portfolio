@@ -18,3 +18,6 @@ use App\Http\Controllers\Frontend\HomeController;
 */
 
 Route::get('/',[HomeController::class,'index']);
+
+
+Route::post('/contact/submit', [\App\Http\Controllers\ContactController::class, 'submit']);
